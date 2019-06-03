@@ -16,6 +16,8 @@
     <input type="text" placeholder="Milano">
     <p>Data di nascita</p>
     <input type="date">
+    <p>Cap:</p>
+    <input type="text" id="cap" placeholder="20147">
 </fieldset>
 
 <fieldset>
@@ -26,7 +28,14 @@
 </fieldset>
 
 <fieldset>
-<input type="submit" value="Iscriviti">
+<input type="submit" value="iscrivit" onclick="iscrizione()">
+function iscrizione() {
+    var x;
+  	x = document.getElementById("cap").value;
+  	if (isNaN(x))
+  		(alert  ("Devi inserire dei numeri!!");)
+
+}
 
 <input type="reset" value="Cancella">
 </fieldset>

@@ -28,7 +28,7 @@
 </fieldset>
 
 <fieldset>
-<input type="submit" value="ISCRIVITI" onclick="iscrizione()">
+<button type="button" value="ISCRIVITI" onclick="iscrizione()">ISCRIVITI</button>
 
 
 <script>
@@ -36,8 +36,9 @@ function iscrizione() {
     var x;
   	x = document.getElementById("cap").value;
   	if (isNaN(x))
-  		(alert  ("Devi inserire dei numeri!!");)
-    
+  		{alert  ("Devi inserire dei numeri!!");}
+    else
+    	{avviso = "Complimenti, la tua iscrizione è confermata";}
      
 }
 </script>
@@ -54,5 +55,3 @@ function iscrizione() {
 
 </body>
 </html>
-
-About
